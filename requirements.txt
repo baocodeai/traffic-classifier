@@ -1,0 +1,35 @@
+# Core
+numpy
+pandas
+
+# Computer vision
+opencv-python
+ultralytics
+
+# Evaluation / viz
+matplotlib
+seaborn
+
+# Dashboard
+streamlit
+
+# Experiment tracking
+mlflow
+
+# Testing
+pytest
+
+# Config
+pyyaml
+python-dotenv
+
+# Dataset acquisition (Phase 2)
+roboflow
+
+# Inference optimization (Phase 9) — CPU build; this machine has no NVIDIA GPU,
+# so plain `onnxruntime`, not `onnxruntime-gpu`. onnxslim is pulled in
+# automatically by Ultralytics' own export step (model.export(format="onnx"))
+# but pinned here explicitly too, for reproducibility.
+onnx
+onnxruntime
+onnxslim
